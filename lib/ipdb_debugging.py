@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-import ipdb
+import ipdb_debugging  
 
-def plus_two(num):
-    num + 2
-    return num
+def test_adds_two():
+    result = ipdb_debugging.adds_two(3)  
+    assert result == 5
